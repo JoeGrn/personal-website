@@ -6,6 +6,8 @@ import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-ic
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
+import Title from '../components/Title';
+
 export default function Home() {
     return (
         <div className={styles.container}>
