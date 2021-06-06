@@ -2,11 +2,11 @@ import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import Typewriter from 'typewriter-effect'
 
-import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import Title from '../components/Title';
+import Navbar from '../components/Navbar'
 
 export default function Home() {
     return (
@@ -18,6 +18,7 @@ export default function Home() {
             </Head>
 
             <main className={styles.main}>
+
                 <code className={styles.title}>
                     Joseph Green
                 </code>
@@ -26,7 +27,7 @@ export default function Home() {
                     <div className={styles.code}>
                         <Typewriter
                             options={{
-                                strings: ['I\'m an engineer.', 'I\'m an architect.', 'I\'m a designer.', 'I\'m a consultant.'],
+                                strings: ['Engineer.', 'Architect.', 'Designer.', 'Consultant.'],
                                 autoStart: true,
                                 loop: true,
                             }}
