@@ -5,7 +5,6 @@ import Footer from "../components/Footer";
 import Title from "../components/Title";
 import AnimatedText from "../components/AnimatedText";
 
-
 const Container = styled.div`
   min-height: 100vh;
   display: flex;

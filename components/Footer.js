@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const FooterContainer = styled.footer`
   width: 100%;
   height: 6%;
-  border-top: 2px solid #eaeaea;
+  border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -33,7 +33,7 @@ const Link = styled.a`
 
   &:hover {
     animation: text-shadow-pop-bottom 0.6s both;
-    color: #d7d3cb;
+    color: #c0c0c0;
     transition: color 0.2s linear;
   }
 
