@@ -27,7 +27,7 @@ export default function Home() {
   return (
     <Container>
       <Head>
-        <title>josephgreen.dev</title>
+        <title>joegreen.dev</title>
         <meta name="description" content="Joseph Green Personal Website" />
         <link rel="icon" href="/laptop-emoji.png" />
       </Head>

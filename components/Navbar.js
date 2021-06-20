@@ -12,6 +12,11 @@ const Nav = styled.nav`
   background-color: #fff;
   z-index: 9999;
   border-bottom: 1px solid #eaeaea;
+
+  @media (max-width: 600px) {
+    justify-content: center;
+    font-size: 0.9rem;
+  }
 `;
 
 const Text = styled.div`
@@ -21,6 +26,7 @@ const Text = styled.div`
 
   @media (max-width: 600px) {
     font-size: 0.9rem;
+    padding: 3%;
   }
 
   &:hover {
@@ -30,11 +36,25 @@ const Text = styled.div`
   }
 `;
 
+const Break = styled.div`
+  padding-right: 2%;
+  font-size: 1.3rem;
+  font-family: monospace;
+
+  @media (max-width: 600px) {
+    font-size: 0.9rem;
+    padding: 3%;
+  }
+`;
+
+
 export default function Navbar() {
     return (
         <Nav>
             <Text><Link href="/">Home</Link></Text>
+            <Break>|</Break>
             <Text><Link href="/blog">Blog</Link></Text>
+            <Break>|</Break>
             <Text><Link href="portfolio">Portfolio</Link></Text>
         </Nav>
     );
