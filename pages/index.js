@@ -12,6 +12,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: flex-start;
   height: 100vh;
+
 `;
 
 const Main = styled.main`
