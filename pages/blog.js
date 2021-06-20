@@ -27,6 +27,7 @@ const Main = styled.main`
 export default function Blog() {
     return <Container>
     <Main>
+    <div>Check back soon...</div>
     </Main>
     </Container>;
 }

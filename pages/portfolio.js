@@ -27,6 +27,7 @@ const Main = styled.main`
 export default function Portfolio() {
     return <Container>
         <Main>
+        <div>Check back soon...</div>
         </Main>
     </Container>;
 }
