@@ -25,8 +25,8 @@ const Text = styled.div`
   font-family: monospace;
 
   @media (max-width: 600px) {
-    font-size: 0.9rem;
-    padding: 3%;
+    padding: 2.5%;
+    font-size: 1.1rem;
   }
 
   &:hover {
@@ -42,8 +42,8 @@ const Break = styled.div`
   font-family: monospace;
 
   @media (max-width: 600px) {
-    font-size: 0.9rem;
-    padding: 3%;
+    padding: 2.5%;
+    font-size: 1.1rem;
   }
 `;
 
