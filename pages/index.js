@@ -22,6 +22,10 @@ const Main = styled.main`
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+
+  @media (max-width: 600px) {
+    padding: 40% 10%;
+  }
 `;
 
 export default function Home() {
