@@ -1,23 +1,23 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react'
+import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const Text = styled.p`
-  font-size: 3rem;
-  font-family: monospace;
-  background-color: #fff;
-  z-index: 9999;
-  border-radius: 30%;
+    font-size: 3rem;
+    font-family: monospace;
+    background-color: #fff;
+    z-index: 9999;
+    border-radius: 30%;
 
-  @media (max-width: 600px) {
-    font-size: 2rem;
-  }
-`;
+    @media (max-width: 600px) {
+        font-size: 2rem;
+    }
+`
 
 export default function Title({ children }) {
-  return <Text>{children}</Text>;
+    return <Text>{children}</Text>
 }
 
 Title.propTypes = {
-  children: PropTypes.node.isRequired,
-};
+    children: PropTypes.node.isRequired,
+}
