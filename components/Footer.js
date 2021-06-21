@@ -11,13 +11,17 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const FooterContainer = styled.footer`
   width: 100%;
-  height: 6%;
+  height: 8%;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #fff;
   z-index: 9999;
+
+  @media (min-width: 1800px) {
+    height: 6%;
+  }
 
   @media (max-width: 600px) {
     height: 8%;

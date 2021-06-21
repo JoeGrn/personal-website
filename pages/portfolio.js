@@ -17,7 +17,7 @@ const Main = styled.main`
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 60%;
+  width: 85%;
   z-index: 2;
   background-color: #fff;
   border-left: 2px solid #eaeaea;

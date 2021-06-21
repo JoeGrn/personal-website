@@ -6,12 +6,16 @@ const Nav = styled.nav`
   position: absolute;
   width: 100%;
   display: flex;
-  height: 6%;
+  height: 8%;
   justify-content: flex-end;
   align-items: center;
   background-color: #fff;
   z-index: 9999;
   border-bottom: 1px solid #eaeaea;
+
+  @media (min-width: 1500px) {
+    height: 6%;
+  }
 
   @media (max-width: 600px) {
     justify-content: center;
