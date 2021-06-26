@@ -5,7 +5,6 @@ import PropTypes from 'prop-types'
 const Text = styled.p`
     font-size: 3rem;
     font-family: monospace;
-    background-color: #fff;
     z-index: 9999;
     border-radius: 30%;
 

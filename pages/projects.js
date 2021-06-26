@@ -6,24 +6,16 @@ import ProjectTile from '../components/ProjectTile'
 const Container = styled.div`
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     height: 100vh;
-`
-
-const Main = styled.main`
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
     width: 85%;
-    z-index: 2;
-    background-color: #fff;
     border-left: 2px solid #eaeaea;
     border-right: 2px solid #eaeaea;
+    background-color: #fff;
+    z-index: 2;
 `
 
 export default function Projects() {
@@ -40,20 +32,20 @@ export default function Projects() {
         }
     }, [])
 
-    console.log(data)
-
     if (error) {
         return <div>{error}</div>
     }
 
+    if (!data || data.length < 1) {
+        return <div>Project data unavailable right now, please check back later.</div>
+    }
+
     return (
         <Container>
-            <Main>
-                {data &&
-                    data.map((repo) => (
-                        <ProjectTile repoData={repo} key={repo.id} />
-                    ))}
-            </Main>
+            {data &&
+                data.map((repo) => (
+                    <ProjectTile repoData={repo} key={repo.id} />
+                ))}
         </Container>
     )
 }

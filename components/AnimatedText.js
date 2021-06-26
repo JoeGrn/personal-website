@@ -16,7 +16,7 @@ const Text = styled.div`
     font-family: monospace;
 
     @media (max-width: 600px) {
-        font-size: 0.9rem;
+        font-size: 0.8rem;
     }
 `
 
@@ -27,15 +27,15 @@ export default function AnimatedText() {
                 <Typewriter
                     options={{
                         strings: [
-                            "I'm an Engineer.",
-                            "I'm an Architect.",
-                            "I'm a Designer.",
-                            "I'm a Consultant.",
+                            "Full Stack Engineer and Consultant.",
+                            "Keen to build high impact products.",
+                            "Based in the UK.",
                         ],
                         autoStart: true,
                         loop: true,
                     }}
                 />
+                
             </Text>
         </Container>
     )

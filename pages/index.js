@@ -1,17 +1,16 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 
-import Footer from '../components/Footer'
 import Title from '../components/Title'
 import AnimatedText from '../components/AnimatedText'
 
 const Container = styled.div`
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    height: 100vh;
+    height: 100%;
+    width: 100%
 `
 
 const Main = styled.main`
@@ -43,8 +42,6 @@ export default function Home() {
                 <Title>Joe Green</Title>
                 <AnimatedText />
             </Main>
-
-            <Footer />
         </Container>
     )
 }
