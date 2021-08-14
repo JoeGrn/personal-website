@@ -12,10 +12,6 @@ const Container = styled.div`
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
-
-    @media (max-width: 600px) {
-        height: 95vh;
-    }
 `
 
 function MyApp({ Component, pageProps }) {
