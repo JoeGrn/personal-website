@@ -4,6 +4,7 @@ import styled from 'styled-components';
 
 const Nav = styled.nav`
   position: absolute;
+  top: 0;
   width: 100%;
   display: flex;
   height: 70px;
@@ -54,8 +55,10 @@ export default function Navbar() {
             <Text><Link href="/">Home</Link></Text>
             {/* <Break>|</Break>
             <Text><Link href="/blog">Blog</Link></Text> */}
+            {/* <Break>|</Break>
+            <Text><Link href="/projects">Projects</Link></Text> */}
             <Break>|</Break>
-            <Text><Link href="/projects">Projects</Link></Text>
+            <Text><Link href="/about">About</Link></Text>
         </Nav>
     );
 }

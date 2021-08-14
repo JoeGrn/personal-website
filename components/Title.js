@@ -5,8 +5,9 @@ import PropTypes from 'prop-types'
 const Text = styled.p`
     font-size: 3rem;
     font-family: monospace;
-    z-index: 9999;
+    z-index: 2;
     border-radius: 30%;
+    margin: 10px;
 
     @media (max-width: 600px) {
         font-size: 2rem;

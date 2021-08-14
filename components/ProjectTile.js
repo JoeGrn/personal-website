@@ -1,19 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Tile = styled.div`
-    border: 2px solid #a9a9a9;
-    width: 33%;
-    height: 200px;
+const Container = styled.div`
+    border: 1px solid #a9a9a9;
+    width: 100%;
+    height: 100px;
     margin: 20px;
     border-radius: 15px;
+    background-color: #fff;
 `
 
-export default function ProjectTile({ repoData }) {
+export default function Tile({ repoData }) {
     console.log(repoData)
     return (
-        <Tile>
-
-        </Tile>
+        <Container>
+            
+        </Container>
     )
 }

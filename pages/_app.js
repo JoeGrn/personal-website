@@ -12,6 +12,10 @@ const Container = styled.div`
     justify-content: center;
     align-items: flex-start;
     height: 100vh;
+
+    @media (max-width: 600px) {
+        height: 95vh;
+    }
 `
 
 function MyApp({ Component, pageProps }) {
@@ -20,7 +24,7 @@ function MyApp({ Component, pageProps }) {
             {/* <Navbar /> */}
             <Particles
                 style={{ position: 'absolute'}}
-                height="100%"
+                height="95vh"
                 width="100%"
                 params={particlesConfig}
             />
